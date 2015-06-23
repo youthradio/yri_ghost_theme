@@ -1,0 +1,42 @@
+{{!< default}}
+
+{{> header}}
+
+<section class="main" role="main">
+  <h3>YRI's Latest Projects</h3>
+  <div id="masonry-project">
+    {{#foreach posts}}
+    {{#has tag="project"}}
+    <div role="post" itemscope itemtype="http://schema.org/Article" class="item">
+      <header class="postheader">
+        <img src="{{{image}}}" alt="">
+      <div class="postinfo">
+        <h3>{{{title}}}</h3>
+        <p class="ex">{{{content preview="true"}}}</p>
+        <a class="more" href="{{{url}}}">View more</a>
+      </div>
+      </header>
+    </div>
+    {{/has}}
+    {{/foreach}}
+  </div>
+<hr>
+<h3>Latest News</h3>
+<div id="news">
+  {{#foreach posts}}
+  {{#has tag="news"}}
+  <div class="row">
+    <div class="col-md-2 text-left">
+            <h3><a class="news-title"href="{{{url}}}">{{{title}}}</a></h3>
+            <span class="news-date">posted on {{{date}}}</span>
+    </div>
+    <div class="col-md-10 text-left">
+      <p class="news-ex">{{{excerpt words="40"}}}... <a href="{{{url}}}">- See more</a></p>
+    </div>
+  </div>
+   {{/has}}
+  {{/foreach}}
+  </div>
+  <hr>
+</section>
+{{> footer}}

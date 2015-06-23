@@ -1,0 +1,10 @@
+<header class="masthead" role="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+  {{navigation}}
+  <div>
+    {{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+    <h1 class="blog-title acc-col">{{@blog.title}}</h1>
+    <hr>
+    <p class="blog-description">{{@blog.description}}</p>
+  </div>
+  <hr>
+</header>

@@ -1,0 +1,21 @@
+{
+  "name": "youth_radio_interactive_theme",
+  "version": "0.1.0",
+  "description": "YRI Theme",
+  "author": "Lo Benichou",
+  "homepage": "https://yri.youthradio.org/",
+  "keywords": [
+    "YRI",
+    "theme",
+    "portfolio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/youthradio/yri_ghost_theme.git"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt": "^0.4.5",
+    "grunt-postcss": "^0.5.2"
+  }
+}
